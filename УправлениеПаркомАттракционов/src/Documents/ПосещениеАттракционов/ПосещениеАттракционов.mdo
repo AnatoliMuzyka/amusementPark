@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7ff9a17d-dc4c-4afb-b7e1-c04b374a8cd3">
+  <producedTypes>
+    <objectType typeId="1b865207-d6c4-4102-87a7-cd5f2ad4dba6" valueTypeId="d9d7e03c-052a-44a5-8122-7a480f11a333"/>
+    <refType typeId="1c0bd9c1-a913-44f7-82ed-352097d33a74" valueTypeId="43bb2886-4012-424e-bbac-210a7a0f5791"/>
+    <selectionType typeId="d3eb4341-95fd-40d4-923c-4afbf2b305d5" valueTypeId="53fb99d0-0fcf-4a3e-a8c0-abd1a2247d96"/>
+    <listType typeId="0c880fee-c099-4785-acfd-aab38ab90598" valueTypeId="d8175baf-48cf-4898-af6a-2fcac6f9ac3e"/>
+    <managerType typeId="df0f7d49-b80b-4e98-98c0-98c3288560a4" valueTypeId="4926b5ab-99de-4568-bc6f-ea09b3fc4ef1"/>
+  </producedTypes>
+  <name>ПосещениеАттракционов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Посещение аттракционов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПосещениеАттракционов.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultListForm>Document.ПосещениеАттракционов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.ПосещениеАттракционов.Form.ФормаВыбора</defaultChoiceForm>
+  <registerRecords>AccumulationRegister.АктивныеПосещения</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="308cbc65-ffb7-4e32-ae45-22a8af67fa56">
+    <name>Аттракцион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аттракцион</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Аттракционы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d9cc6c0d-d107-40df-95d0-053154546d01">
+    <name>Основание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПродажаБилета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="2c571fa3-9f3f-488d-b69d-23ed79bb72ea">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0c9dd03d-8114-4da1-80ac-687a307bf99e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>
